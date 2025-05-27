@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cheap Food Alerts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      width: 100%;
+      max-width: 400px;
+    }
+    input[type="email"] {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>When the Dodgers win at home during the regular season...</h1>
+  <p>You can get a Panda Express plate for $6 — normally $11. We'll send you an alert the next morning.</p>
+
+  <form>
+    <!-- Replace this with your MailerLite embed once your email is verified -->
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Notify Me</button>
+  </form>
+
+  <footer>
+    © 2025 CheapFoodAlerts.com
+  </footer>
+</body>
+</html>
