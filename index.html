@@ -33,7 +33,12 @@
       gap: 0.75rem;
       width: 100%;
       max-width: 400px;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
+    input[type="text"],
     input[type="email"] {
       padding: 0.75rem;
       font-size: 1rem;
@@ -57,21 +62,41 @@
       font-size: 0.85rem;
       color: #666;
     }
-    .form-wrapper {
-      width: 100%;
-      max-width: 600px;
-    }
   </style>
 </head>
 <body>
   <h1>Dodgers win at home during the regular season? Get a $6 plate at Panda Express.</h1>
   <p>Use code DODGERSWIN the next day in the Panda Express app at participating SoCal locations. We’ll send you an alert after each win.</p>
 
-  <!-- Email Octopus form -->
-  <script async src="https://eocampaign1.com/form/44e4aeac-59f8-11f0-aa7e-37ef3cf4d0a5.js" data-form="44e4aeac-59f8-11f0-aa7e-37ef3cf4d0a5"></script>
+  <form id="sib-form" method="POST" action="https://1d5fca61.sibforms.com/serve/MUIFALaQlnsDmuiSkNrtLfJrT89ABL4BaR-rauo50kso1hA7HADbdvi2sfv31HaGmqDyCNphUAffzViyQfILMMJ85n8hfpLMhHlY7jwVTWJ-A4rpmMNTaacYAeNSsobtYqCGAqMNs0EUFc7JL2Rpb8YZ1BUMp5LomIGG46-0RdxBphqXkbKmdzd3WxwZHVliPdDxnspUlDa18T15" data-type="subscription">
+    <input type="text" id="EMAIL" name="EMAIL" placeholder="Enter your email" required />
+    <div class="g-recaptcha" data-sitekey="6LdtdHorAAAAAJGuwXEIV4nHIZoGzRI1YJY6tV02" data-callback="invisibleCaptchaCallback" data-size="invisible"></div>
+    <button type="submit">Subscribe</button>
+    <input type="text" name="email_address_check" value="" style="display:none;">
+    <input type="hidden" name="locale" value="en">
+  </form>
 
   <footer>
     © 2025 CheapFoodAlerts.com
   </footer>
+
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+    window.LOCALE = 'en';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid :( Please try again.";
+    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank :/ ";
+    window.GENERIC_INVALID_MESSAGE = "The information provided is invalid :( Please try again.";
+    window.translation = {
+      common: {
+        selectedList: '{quantity} list selected',
+        selectedLists: '{quantity} lists selected',
+        selectedOption: '{quantity} selected',
+        selectedOptions: '{quantity} selected',
+      }
+    };
+    var AUTOHIDE = Boolean(0);
+  </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 </body>
 </html>
